@@ -238,23 +238,6 @@ body{
     }
 }
 
-@media (min-width: 1024px) {
-    .encabezado {
-        padding: 1.25rem 2rem;
-    }
-
-    .hero {
-        padding: 5rem 2rem;
-        height: auto;
-        text-align: left;
-        align-items: flex-start;
-    }
-
-    .btn-registro {
-        align-self: flex-start;
-    }
-}
-
 @media (max-width: 860px) {
 
     .encabezado{
