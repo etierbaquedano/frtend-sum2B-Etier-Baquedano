@@ -1,0 +1,86 @@
+:root{
+    --color-header: #222222;
+    --color-fondo: #D4A373;
+    --color-texto: #FFFFFF;
+    --color-cards: #E5E5E5;
+    --color-fondo-cards: #DDE8F1;
+    --color-footer: #84A98C;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+body{
+    background-color: var(--color-fondo);
+}
+
+.encabezado{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    background-color: var(--color-header);
+    padding: 20px;
+    padding-right: 50px;
+}
+.logo{
+    margin-right: 300px;
+}
+
+.menu-nav-encabezado-lista{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding-right: 5px;
+}
+.lista-item{
+    list-style: none;
+    padding-right: 10px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url('../imagenes/img-de-fondo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.btn-registro{
+    background-color: var(--color-header);
+    color: var(--color-texto);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    background-color: var(--color-fondo-cards);
+}
+.tarjetas{
+    background-color: var(--color-cards);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.img-tarjeta{
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
