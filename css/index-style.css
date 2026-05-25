@@ -3,7 +3,6 @@
     --color-fondo: #D4A373;
     --color-texto: #FFFFFF;
     --color-cards: #E5E5E5;
-    --color-fondo-cards: #DDE8F1;
     --color-footer: #84A98C;
 }
 
@@ -67,11 +66,22 @@ body{
 }
 
 .servicios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contenedor-tarjetas{
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 20px;
-    background-color: var(--color-fondo-cards);
 }
+
 .tarjetas{
     background-color: var(--color-cards);
     padding: 20px;
@@ -83,4 +93,96 @@ body{
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.especialidades{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;   
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contenedor-especialidades{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+.especialidad{
+    background-color: var(--color-cards);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icono-especialidad{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.equipo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;   
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contenedor-equipo{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+.miembro-equipo{
+    background-color: var(--color-cards);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px; 
+
+}
+.subtestimonios{
+    /* background-color: var(--color-fondo-testimonios); */
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.testimonio{
+    background-color: var(--color-cards);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px;
+}
+
+.pie-pagina{
+    background-color: var(--color-footer);
+    color: var(--color-texto);
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 20px;
 }
