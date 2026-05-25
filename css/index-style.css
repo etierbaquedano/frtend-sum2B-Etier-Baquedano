@@ -238,7 +238,7 @@ body{
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 800px) {
 
     .encabezado{
         position: relative;
