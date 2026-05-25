@@ -1,3 +1,5 @@
+
+
 :root{
     --color-header: #222222;
     --color-fondo: #D4A373;
@@ -11,12 +13,24 @@
     padding:0;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+
 a{
     text-decoration: none;
     color: var(--color-texto);
 }
 body{
     background-color: var(--color-fondo);
+    font-family: cause, cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
 }
 
 .encabezado{
@@ -39,6 +53,25 @@ body{
 .lista-item{
     list-style: none;
     padding-right: 10px;
+}
+
+.nav-toggle-check {
+    display: none;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-texto);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
 }
 
 .hero{
@@ -186,3 +219,109 @@ body{
     grid-template-columns: repeat(4, auto);
     padding: 20px;
 }
+
+@media (min-width: 768px) {
+    .contenedor-tarjetas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contenedor-especialidades {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .contenedor-equipo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .subtestimonios {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .encabezado {
+        padding: 1.25rem 2rem;
+    }
+
+    .hero {
+        padding: 5rem 2rem;
+        height: auto;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .btn-registro {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .encabezado{
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .menu-nav-encabezado{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        background-color: var(--color-header);
+        width: 220px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .menu-nav-encabezado-lista{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .lista-item{
+        padding-right: 0;
+    }
+
+    .lista-item a{
+        display: block;
+        width: 100%;
+    }
+
+    .nav-toggle-check:checked + .nav-toggle + .menu-nav-encabezado{
+        display: block;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .servicios,
+    .especialidades,
+    .equipo,
+    .testimonios {
+        padding: 3rem 1rem;
+    }
+
+    .pie-pagina {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-tarjetas,
+    .contenedor-especialidades,
+    .contenedor-equipo,
+    .subtestimonios {
+        grid-template-columns: 1fr;
+    }
+}
+
