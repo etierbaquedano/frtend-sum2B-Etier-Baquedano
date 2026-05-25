@@ -1,0 +1,33 @@
+:root {
+    --color-gray-light: #BDBEC0;
+    --color-blue: #0768B1;
+    --color-gray-dark: #3F515D;
+    --color-gray-medium: #7A7C85;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-gray-light);
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-blue);
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-nav-encabezado-lista {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
